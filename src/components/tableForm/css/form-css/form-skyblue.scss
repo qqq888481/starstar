@@ -1,0 +1,158 @@
+.form-style-one{
+    @extend .public-form-item-style;
+    display: flex;
+    flex-wrap: wrap;
+    .form-item:nth-child(1), .form-item:nth-child(3), .form-item:nth-child(5){
+        border-right: none;
+    }
+    .form-item{
+        height: 46rem;
+        width: 50%;
+        border: 1px solid rgba(222, 229, 239, 1);
+        border-bottom: none;
+        .item-label{
+            border-right: 1rem solid rgba(222, 229, 239, 1);
+        }
+    }
+    .textarea-one{//添加单独样式行的单独样式名
+        width: 100%;
+        height: 80rem;
+        .item-label{
+            width: calc(15%) !important;
+        }  
+        .item-input{
+            width: 85% !important;
+        }             
+    }
+    .form-item:nth-child(10),.form-item:nth-child(11){
+        width: 100% ;
+        .item-label{
+            width: calc(15%) !important;
+        }   
+        .item-input{
+            width: 85% !important;
+        }     
+    }//经纬度行样式示例
+    .form-item:nth-child(12){
+        width: 100% ;
+        height: 80rem;
+        border-bottom: 1px solid rgba(222, 229, 239, 1);
+        .item-label{
+            width: calc(15%) !important;
+        }   
+        .item-input{
+            width: 85% !important;
+            // .file-input>.file-show-box>.file-item{
+            //     height: 50%;
+            // }//单个文件显示高度
+        }     
+    }//文件行样式示例
+}
+
+.public-form-item-style{//公共样式
+    .form-item{
+        display: flex;
+        margin-bottom: 0;
+        .item-label{
+            width: 30%;
+            height: 100%;
+            padding:0 20rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgba(243, 248, 252, 1);
+        }//标签色
+        .item-input{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .ant-input{//文本框
+            background-color: white;//input背景
+            border:none;//边框
+            color:black;//字体色
+            font-size: 14px;//字体大小
+            box-shadow:none;//input聚焦时的边框光晕
+        }
+
+        .ant-select-selector{//下拉框
+            color:black;//字体色
+            border:none !important;//边框色
+            box-shadow: none !important;//边框光晕
+        }//整个select框配置，边框和背景色会被其他样式修改添加权重
+        
+        .ant-picker,.ant-picker:hover, .ant-picker-focused{//鼠标移入和聚焦后边框样式//日期框
+            border-color: transparent !important;
+            box-shadow:0 0 0 0 transparent !important;//选中后的一圈外围边框光晕
+        }
+
+        .file-input{//文件行样式
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .file-show-box{//左侧文件显示列表
+                width: 90%;
+                height: 100%;
+                overflow-y: auto;
+                display: flex;
+                flex-wrap: wrap;
+                .file-item{//单个文件显示item
+                    width: 30%;
+                    height: 100%;
+                    padding:0 10rem;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 2%;
+                    .text{//上传文件名称
+                        width: 90%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        cursor: pointer;  
+                    }
+                    .text:hover{
+                        text-decoration: underline;
+                    }
+                    .close{//删除按钮
+                        width: 10%;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                    .close:hover{
+                        color: red;
+                    }
+                }
+            }
+            .upload-file-icon{//右侧上传显示
+                width: 10%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border-left: 1px solid rgba(222, 229, 239, 1);
+            }
+        }//文件行样式
+
+        .lonLat{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .left-lonLat-box{
+                width: 90%;
+                display: flex;
+                align-items: center;
+                padding-left: 10rem;
+            }
+            .right-icon{
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border-left: 1px solid rgba(222, 229, 239, 1);
+            }
+        }
+    }
+}

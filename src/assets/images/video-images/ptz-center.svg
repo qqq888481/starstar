@@ -1,0 +1,14 @@
+<svg width="50.000000" height="50.000000" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<rect width="50.000000" height="50.000000" transform="translate(50.000000 50.000000) rotate(180.000000)" fill="#FFFFFF"/>
+	<g clip-path="url(#clip4_20)">
+		<circle cx="25.000000" cy="25.000000" r="22.000000" fill="#CCCCCC"/>
+	</g>
+	<defs>
+		<clipPath id="clip4_20">
+			<rect width="50.000000" height="50.000000" transform="translate(50.000000 50.000000) rotate(180.000000)" fill="white"/>
+		</clipPath>
+	</defs>
+</svg>

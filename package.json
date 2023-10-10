@@ -1,0 +1,40 @@
+{
+  "name": "three",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --open",
+    "build": "vite build",
+    "build:dev": "vite build --mode development"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@arcgis/core": "^4.27.6",
+    "@vueuse/components": "^9.10.0",
+    "@vueuse/core": "^9.10.0",
+    "animate.css": "^4.1.1",
+    "ant-design-vue": "^3.2.15",
+    "axios": "^1.2.2",
+    "dayjs": "^1.11.7",
+    "echarts": "^5.4.1",
+    "echarts-gl": "^2.0.9",
+    "echarts-liquidfill": "^3.1.0",
+    "echarts-stat": "^1.2.0",
+    "esri-loader": "^3.7.0",
+    "html2canvas": "^1.4.1",
+    "pinia": "^2.0.28",
+    "qs": "^6.11.0",
+    "three": "^0.148.0",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.57.1",
+    "vite": "^4.0.4",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

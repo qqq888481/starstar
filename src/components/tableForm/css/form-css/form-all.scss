@@ -1,0 +1,182 @@
+.form-style{
+    display: flex;
+    flex-direction: column;
+    // input单行文本框和textarea文本域
+    .ant-input{
+      background-color: red;//input背景
+      border:1px solid red;//边框
+      color:white;//字体色
+      font-size: 14px;//字体大小
+      box-shadow:0 0 0 0 transparent;//input聚焦时的边框光晕
+    }
+  
+    //number数字选择框
+    .ant-input-number{
+      background-color: red;//input背景
+      border:1px solid red;//边框
+      color:aliceblue;//字体色
+      font-size: 14px;//字体大小
+      box-shadow:0 0 0 0 transparent;//数字框聚焦时的边框光晕
+      .ant-input-number-handler{
+        border-left: 1px solid white;//鼠标移入时，所显示的上下箭头的左侧边框
+        background-color: red !important;//背景色
+        .ant-input-number-handler-down{
+          border-top: 1px solid white;//鼠标移入时，所显示的上下箭头的间隔边框
+        }
+        .ant-input-number-handler-up-inner{
+          color:white;//上箭头颜色
+        }
+        .ant-input-number-handler-down-inner{
+          color:white;//下箭头颜色
+        }
+      }
+    }
+  
+    //radio单选框和checkbox复选框
+    .ant-form-item-control-input{
+      background-color: red;//整行背景色
+      //单选框
+      .ant-radio-wrapper{
+        color: white;//选项文字色
+      }
+      .ant-radio-checked .ant-radio-inner{
+        border-color:transparent;//选中后的一圈细边框色
+        box-shadow:0 0 0 0 transparent;//选中后的一圈外围边框光晕
+      }
+      .ant-radio-inner{
+        background-color: yellow;
+        border-color: transparent;
+      }//选项的背景色和边框
+      .ant-radio-inner::after{
+        background-color: pink;
+      }//选中的中心圆点色
+  
+      //复选框
+      .ant-checkbox-wrapper{
+        color: white;
+      }//选项文字色
+      .ant-checkbox-inner{
+        background-color: yellow;//未选中的复选框背景色
+        border-color: transparent;//未选中的边框
+      }//选项的背景色和边框
+      .ant-checkbox-checked .ant-checkbox-inner{
+        background-color: pink;
+      }//复选框打勾的背景色
+      .ant-checkbox-checked::after{
+        border-color: transparent;
+      }//复选框打勾后鼠标移入的边框
+      .ant-checkbox-checked .ant-checkbox-inner::after{
+        border-color: red;
+      }//复选框打的勾颜色
+  
+      //日期框
+      .ant-picker:hover, .ant-picker-focused{//鼠标移入和聚焦后边框样式
+        border-color: transparent !important;
+        box-shadow:0 0 0 0 transparent !important;//选中后的一圈外围边框光晕
+      }
+      .ant-picker{
+        background-color: red;//整个日期框背景色
+        .ant-picker-input > input{
+          color:white//文字色
+        }
+        .ant-picker-suffix{
+          color:pink//日期图标色
+        }
+        .ant-picker-clear{
+          color:yellow;//清除图标色
+          background-color: red//清楚图标背景色
+        }
+      }
+    }
+  
+    //select下拉框和层级下拉框
+    .ant-select-selector{
+      color:white;//字体色
+      font-size: 14px;//字体大小
+      border-color: transparent !important;//边框色
+      box-shadow: none !important;//边框光晕
+      background-color:red  !important;//背景色
+    }//整个select框配置，边框和背景色会被其他样式修改添加权重
+    .ant-select-arrow{
+      color:yellow
+    }//下拉的箭头标志颜色
+    .ant-select-clear{
+      background-color: transparent;//清空选择的背景色
+      color: yellow;//清空选择的图标色
+    }
+  }
+  
+  //select下拉框的样式
+  .select-down-style{//整体包裹标签
+    background-color: red;
+    .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+      background-color: aqua;//当前已经被选中的行背景色
+      color: red;//当前已经被选中的行的文字色
+    }
+    .ant-select-item-option-active{
+      background-color: pink;//鼠标移入可选行的行背景色
+    }
+    .ant-select-item{
+      color: white;//未选中的其他行文字样式
+    }
+  }
+  
+  //日期框下拉框的样式
+  .data-down-style{
+    .ant-picker-panel{
+      background-color: red;//整个日期选择框背景色
+      border: none;//日期选择框会有默认的边框
+    }
+    .ant-picker-header{//日期选择框头部分
+      border-bottom: none;//头部的下边框
+      color:white;//头部文字色
+    }
+    .ant-picker-header button{
+      color:white//头部切换日期页的图标色
+    }
+    .ant-picker-body{//日期选择框中间正文部分
+      .ant-picker-content th{
+        color:white//日期选择的顶部星期文字的颜色
+      }
+      .ant-picker-cell{
+        color:yellow//不在本月的日期文字颜色
+      }
+      .ant-picker-cell-in-view{
+        color:white//在本月的日期文字颜色
+      }
+      .ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner, .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner{
+        background-color: pink;//鼠标移入可选日期的背景色
+      }
+      .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner{
+        background-color: black;//当前日期框已选的日期背景色
+      }
+      .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before{
+        border: none;//目前日期在日期框中会被默认边框包裹
+      }
+    }
+    .ant-picker-footer{//日期选择框底部分
+      border-top: none;//底部有默认的上边框
+      border-bottom: none;//底部有默认的下边框
+      .ant-picker-today-btn{
+        color:yellow//底部的文字色
+      }
+    }
+  }
+  
+  //层级下拉框样式
+  .cascader-down-style{
+    background-color: red;//整个层级下拉的背景色
+    .ant-cascader-menu{
+      border-color: yellowgreen;//层级会有默认的右边框表示区分
+    }
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover{
+      background-color: aqua;//当前已经被选中的行背景色
+      color: white;//当前已经被选中的行的文字色
+    }
+    .ant-cascader-menu-item{
+      color:yellow;//未选中的其他行文字色
+    }
+    .ant-cascader-menu-item:hover{
+      background-color: pink;//鼠标移入可选行的背景色
+    }
+  }

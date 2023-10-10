@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'iconfont-yaogan'; /* Project id 3620652  遥感使用*/
+	src: url('iconfont.woff2?t=1663724072199') format('woff2'),
+		url('iconfont.woff?t=1663724072199') format('woff'),
+		url('iconfont.ttf?t=1663724072199') format('truetype');
+}
+
+.iconfont2 {
+	font-family: 'iconfont-yaogan' !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zanwutupian:before {
+	content: '\e603';
+}
+
+.icon-shanchu:before {
+	content: '\e77a';
+}
+
+.icon-tianjia:before {
+	content: '\e77b';
+}
+
+.icon-jiaohuan:before {
+	content: '\e777';
+}
+
+.icon-juanlian:before {
+	content: '\e778';
+}
+
+.icon-wendang:before {
+	content: '\e779';
+}
+
+.icon-suoxiaoyg:before {
+	content: '\e61b';
+}
+
+.icon-zhexiantu:before {
+	content: '\e773';
+}
+
+.icon-zhuzhuangtu:before {
+	content: '\e774';
+}
+
+.icon-zhuantitu:before {
+	content: '\e775';
+}
+
+.icon-xiazai111:before {
+	content: '\e776';
+}
+
+.icon-jindimian:before {
+	content: '\e772';
+}
+
+.icon-NO2:before {
+	content: '\e764';
+}
+
+.icon-HCHO:before {
+	content: '\e765';
+}
+
+.icon-SO2:before {
+	content: '\e767';
+}
+
+.icon-toumingdu:before {
+	content: '\e768';
+}
+
+.icon-fangda111:before {
+	content: '\e769';
+}
+
+.icon-fuwei:before {
+	content: '\e76a';
+}
+
+.icon-chouyangqiantiwuzhishizhi:before {
+	content: '\e76b';
+}
+
+.icon-CH4:before {
+	content: '\e76c';
+}
+
+.icon-CO:before {
+	content: '\e76d';
+}
+
+.icon-fengchang:before {
+	content: '\e76e';
+}
+
+.icon-O3:before {
+	content: '\e76f';
+}
+
+.icon-tuceng111:before {
+	content: '\e770';
+}
+
+.icon-yaoganjiance:before {
+	content: '\e771';
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 这3个是为了部署更新之后，可以自动清缓存 -->
+    <meta http-equiv="pragram" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="expires" content="0" />
+    <!--  -->
+    <title>WebGL</title>
+    <script src="/lib/Cesium-1.83/Cesium.js"></script>
+    <!--animate.css动画-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--flv播放器-->
+    <script src="/lib/monitor/mpegts.js"></script>
+    <!--sha1加密包-->
+    <script src="/lib/monitor/sha1.js"></script>
+    <script src="/lib/cuon-matrix.js"></script>
+    <script src="/lib/cuon-utils.js"></script>
+    <script src="/lib/webgl-debug.js"></script>
+    <script src="/lib/webgl-utils.js"></script>
+    <!-- <script src="https://unpkg.com/browse/vue3-seamless-scroll@1.0.2/dist/vue3-seamless-scroll.min.js"></script> -->
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="/config/sysCfg.js"></script>
+    <script src="/config/mapCfg.js"></script>
+  </body>
+</html>
