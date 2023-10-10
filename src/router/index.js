@@ -15,7 +15,7 @@ export const routes = [
      {
       path:'chaptor1',
       name:'chaptor1',
-      redirect:'/chaptor1/point',
+      redirect:'/chaptor1/jupiter',
       component:()=>import('@/views/chaptor1/index.vue'),
       children:[
         {
